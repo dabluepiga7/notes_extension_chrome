@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Code Notes",
+  "version": "1.0.1",
+  "description": "Open-source free to edit Notes extension in Google Chrome",
+  "permissions": ["storage", "clipboardWrite"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

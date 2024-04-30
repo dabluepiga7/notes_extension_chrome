@@ -1,0 +1,117 @@
+body {
+  width: 300px;
+  padding: 10px;
+}
+
+.notification {
+  display: none;
+  background-color: rgba(128, 0, 128, 0.8);
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.note {
+  position: relative;
+  background-color: #ffd;
+  border: 2px solid rgba(128, 0, 128, 1); /* Purple border */
+  border-radius: 10px;
+  width: calc(50% - 10px); /* Adjust width to accommodate two notes per row */
+  margin-bottom: 10px; /* Increase space between rows */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  padding: 10px; /* Add padding to each note */
+}
+
+.note-content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+}
+
+.copyButton {
+  position: absolute;
+  top: 5px;
+  right: 0px; /* Increase right spacing */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #777;
+ 
+}
+
+.copyButton:hover {
+  color: #333;
+}
+
+.showMoreButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 12px;
+  color: #777;
+}
+
+.showMoreButton:hover {
+  color: #333;
+}
+
+#noteInput {
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: top;
+  resize: none;
+  border: 2px solid #ccc; /* Light gray border */
+}
+
+#saveButton {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #666; /* Dark gray background */
+  color: white;
+  cursor: pointer;
+  vertical-align: top;
+  height: calc(100% - 8px); /* Adjust height to match the textarea */
+}
+
+#saveButton:hover {
+  background-color: #555; /* Darker gray background on hover */
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  background: none;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 0; /* Make it a circle */
+  padding: 1px;
+  cursor: pointer;
+  right: 20px; /* Adjust right spacing for X button */
+}
+
+.closeButton:hover {
+  color: #f00;
+}
+
+#icon img {
+  width: 10%; /* Reduce width to 50% */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add space between icon and notes */
+}
+
+#noteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
